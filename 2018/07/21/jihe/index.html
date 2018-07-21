@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第一周总结 | Hexo</title>
+  <title>集合相关操作 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="文件创建： 文件名不能数字和下划线开头。 文件后缀为.py #  单行注释 ‘’’            多行注释 ‘’’ “”” 多行注释 “”” 二进制（0b）    oct八进制（0o）    hex十六进制（0x） ture表示肯定   false表示否定    都区分大小写 \\ 反斜线   \000空    \’单引号    \’’双引号    \n换行    \r回车    \t横向">
-<meta name="keywords" content="标签">
+  <meta name="description" content="集合12345678910创建集合集合对象支持 union（联合），intersection（交），difference（差）和 sysmmetric difference（对称差集）等数学运算创建空集合，必须使用set()，而不是&amp;#123;&amp;#125;创建多个数据的集合	没有参数，set会创建空集	提供一个str作为输入集合，创建一个set。	提供一个list作为输入集合，创建一个set。	重">
+<meta name="keywords" content="总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一周总结">
-<meta property="og:url" content="http://yoursite.com/2018/07/19/第一周总结/index.html">
+<meta property="og:title" content="集合相关操作">
+<meta property="og:url" content="http://yoursite.com/2018/07/21/jihe/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="文件创建： 文件名不能数字和下划线开头。 文件后缀为.py #  单行注释 ‘’’            多行注释 ‘’’ “”” 多行注释 “”” 二进制（0b）    oct八进制（0o）    hex十六进制（0x） ture表示肯定   false表示否定    都区分大小写 \\ 反斜线   \000空    \’单引号    \’’双引号    \n换行    \r回车    \t横向">
+<meta property="og:description" content="集合12345678910创建集合集合对象支持 union（联合），intersection（交），difference（差）和 sysmmetric difference（对称差集）等数学运算创建空集合，必须使用set()，而不是&amp;#123;&amp;#125;创建多个数据的集合	没有参数，set会创建空集	提供一个str作为输入集合，创建一个set。	提供一个list作为输入集合，创建一个set。	重">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-21T08:02:53.018Z">
+<meta property="og:updated_time" content="2018-07-21T08:25:02.566Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一周总结">
-<meta name="twitter:description" content="文件创建： 文件名不能数字和下划线开头。 文件后缀为.py #  单行注释 ‘’’            多行注释 ‘’’ “”” 多行注释 “”” 二进制（0b）    oct八进制（0o）    hex十六进制（0x） ture表示肯定   false表示否定    都区分大小写 \\ 反斜线   \000空    \’单引号    \’’双引号    \n换行    \r回车    \t横向">
+<meta name="twitter:title" content="集合相关操作">
+<meta name="twitter:description" content="集合12345678910创建集合集合对象支持 union（联合），intersection（交），difference（差）和 sysmmetric difference（对称差集）等数学运算创建空集合，必须使用set()，而不是&amp;#123;&amp;#125;创建多个数据的集合	没有参数，set会创建空集	提供一个str作为输入集合，创建一个set。	提供一个list作为输入集合，创建一个set。	重">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,64 +155,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第一周总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-jihe" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一周总结
+      集合相关操作
     </h1>
   
 
         
-        <a href="/2018/07/19/第一周总结/" class="archive-article-date">
-  	<time datetime="2018-07-19T11:26:44.148Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+        <a href="/2018/07/21/jihe/" class="archive-article-date">
+  	<time datetime="2018-07-21T08:26:32.176Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code class="bash">文件创建：
-文件名不能数字和下划线开头。
-文件后缀为.py
-<span class="comment">#  单行注释</span>
-‘’’           
-多行注释
-‘’’
-“””
-多行注释
-“””
-二进制（0b）    oct八进制（0o）    hex十六进制（0x）
-ture表示肯定   <span class="literal">false</span>表示否定    都区分大小写
-\\ 反斜线   \000空    \’单引号    \’’双引号    \n换行    \r回车    \t横向制表符   \（在行尾时）续行符
-+连接     ：切片A=[m:n]  在列表A中取出m至n-1的值
-不可变数据：
-Nuber  数值类型
-String   字符类型
-List       列表类型
-可变数据：
-Tuple    元组类型
-Dict      字典类型
-Set        集合类型
-
-
- str<span class="string">"%d %0%X"</span>%(64, 64, 255)
-Print（str）
-输出：64 10 FFF
-把64 64  255分别输出十，八，十六进制
-
-有序：
-tuple元组（）可以获得数据但不能更改
-list列表[ ]可以获得数据也可以更改
-无须：
-dic字典可以添加，更改，获取数据只能用键值
-ste{  } 集合集合没有标识符号
-若集合中有重复的元素，输出时则自动去除
-</code></pre>
-
+        <h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">创建集合</span><br><span class="line">集合对象支持 union（联合），intersection（交），difference（差）和 sysmmetric difference（对称差集）等数学运算</span><br><span class="line">创建空集合，必须使用<span class="built_in">set</span>()，而不是&#123;&#125;</span><br><span class="line">创建多个数据的集合</span><br><span class="line">	没有参数，<span class="built_in">set</span>会创建空集</span><br><span class="line">	提供一个str作为输入集合，创建一个<span class="built_in">set</span>。</span><br><span class="line">	提供一个list作为输入集合，创建一个<span class="built_in">set</span>。</span><br><span class="line">	重复元素在<span class="built_in">set</span>中自动被过滤</span><br><span class="line">注意：集合是唯一性数据，所有相同的数据只会保留一份</span><br></pre></td></tr></table></figure>
+<h3 id="集合的序列操作"><a href="#集合的序列操作" class="headerlink" title="集合的序列操作"></a>集合的序列操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">函数	描述</span><br><span class="line">len()	获取集合长度</span><br><span class="line">max()	获取集合最大值</span><br><span class="line">min(）	获取集合最小值</span><br><span class="line"><span class="built_in">set</span>()	创建集合</span><br><span class="line">集合的遍历</span><br><span class="line">普通集合遍历</span><br><span class="line">	<span class="keyword">for</span>  变量  <span class="keyword">in</span>   集合:</span><br><span class="line">		使用变量</span><br><span class="line">多集集合遍历</span><br><span class="line">	集合=&#123;(值,值...),(值,值...),(值,值...)&#125;</span><br><span class="line">	<span class="keyword">for</span>  变量1,变量2  <span class="keyword">in</span>   集合:</span><br><span class="line">		使用变量1和变量2</span><br><span class="line"></span><br><span class="line">子集和超集</span><br><span class="line"></span><br><span class="line">	sSet=<span class="built_in">set</span>([1,2,3])</span><br><span class="line">	bSet=<span class="built_in">set</span>([1,2,3,4,5,6])</span><br><span class="line">	sSet.issubset(bSet)           &gt;True</span><br><span class="line">	sSet.issuperset(bSet)         &gt;False</span><br></pre></td></tr></table></figure>
+<h3 id="集合常用函数"><a href="#集合常用函数" class="headerlink" title="集合常用函数"></a>集合常用函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">集合函数</span><br><span class="line">	函数	描述</span><br><span class="line">	add()	添加元素，无序插入</span><br><span class="line">        set7=&#123;<span class="string">'上单'</span>,<span class="string">'中单'</span>,<span class="string">'打野'</span>,<span class="string">'射手'</span>,<span class="string">'辅助'</span>&#125;</span><br><span class="line">        set7.add(<span class="string">'法师'</span>)</span><br><span class="line">        <span class="built_in">print</span>(set7)</span><br><span class="line">        &gt;&#123;<span class="string">'中单'</span>, <span class="string">'射手'</span>, <span class="string">'上单'</span>, <span class="string">'辅助'</span>, <span class="string">'打野'</span>, <span class="string">'法师'</span>&#125;</span><br><span class="line">	pop()	随机删除一个元素，当集合是由列表和元组组成时,set.pop()是从左边删除</span><br><span class="line">        <span class="built_in">print</span>(set7.pop())<span class="comment">#删除并返回</span></span><br><span class="line">	remove(val）	删除集合中的某个元素，返回值None，若不存在则会报错</span><br><span class="line">	discard(key)	删除元素，不同的是，如果删除的元素不在集合中，remove会报错，discard不会报错，返回值None</span><br><span class="line">        set8=<span class="built_in">set</span>([<span class="string">'上单'</span>,<span class="string">'中单'</span>,<span class="string">'打野'</span>,<span class="string">'射手'</span>,<span class="string">'辅助'</span>])</span><br><span class="line">        set8.discard(<span class="string">'射手'</span>)</span><br><span class="line">        <span class="built_in">print</span>(set8)</span><br><span class="line">	clear()	删除集合的所有元素（使它成为空集），不能清除某一个值</span><br><span class="line">	copy()	返回一个新集合，它是集合s的浅拷贝</span><br><span class="line"></span><br><span class="line">	函数		含义</span><br><span class="line">	s.difference(t)	        差集（A – B：差集A – B。在A中，且不在B中）</span><br><span class="line">	s.difference_update(t)  差集更新</span><br><span class="line">	s.intersection(t)       交集（A &amp; B：交集A∩B。在A和B中的对象）</span><br><span class="line">	s.intersection_update(t) 交集更新</span><br><span class="line">	s.union(t)              并集（A | B：并集A∪B。在A或B中的对象）</span><br><span class="line">	s.update(t)	            s中的成员更新为那些包含在s或t中，但不是s和t共有的元素</span><br><span class="line">	s.issuperset(t)|s.issubset(t)	超集|子集</span><br><span class="line">	s.isdisjoint(t)	        非相交集合</span><br><span class="line">	s1.symmetric_difference(s2)（A ^ B：对称集 (A-B)∪(B-A)。在A或B中的对象，但不同时在A和B中）</span><br></pre></td></tr></table></figure>
+<h3 id="冰冻集合-frozenset"><a href="#冰冻集合-frozenset" class="headerlink" title="冰冻集合-frozenset"></a>冰冻集合-frozenset</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">冰冻集合</span><br><span class="line">	冰冻集合又称为固定集合，只要创建成功，就不能进行修改</span><br><span class="line">创建空的冰冻集合</span><br><span class="line">	fset=frozenset()</span><br><span class="line">创建带有元素的集合</span><br><span class="line">遍历冰冻集合</span><br><span class="line">冰冻集合推导式</span><br><span class="line">冰冻集合函数</span><br></pre></td></tr></table></figure>
       
 
       
@@ -246,7 +212,7 @@ ste{  } 集合集合没有标识符号
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">标签</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
         		</li>
       		
 		</ul>
@@ -302,7 +268,7 @@ ste{  } 集合集合没有标识符号
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/第一周总结/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/21/jihe/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -316,18 +282,18 @@ ste{  } 集合集合没有标识符号
   
 <nav id="article-nav">
   
-    <a href="/2018/07/21/7.20zongjie/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/21/moniHr/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          字典相关操作
+          模拟公司hr录入员工账号密码的程序
         
       </div>
     </a>
   
   
-    <a href="/2018/07/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2018/07/21/gouwu/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">模拟网上购物车</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -354,7 +320,7 @@ ste{  } 集合集合没有标识符号
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合"><span class="toc-number">1.</span> <span class="toc-text">集合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#集合的序列操作"><span class="toc-number">1.1.</span> <span class="toc-text">集合的序列操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集合常用函数"><span class="toc-number">1.2.</span> <span class="toc-text">集合常用函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#冰冻集合-frozenset"><span class="toc-number">1.3.</span> <span class="toc-text">冰冻集合-frozenset</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
