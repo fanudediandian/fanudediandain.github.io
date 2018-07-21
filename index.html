@@ -152,6 +152,79 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-三级菜单" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/21/三级菜单/">三级菜单</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/21/三级菜单/" class="archive-article-date">
+  	<time datetime="2018-07-21T08:47:30.077Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 要求: </span></span><br><span class="line"><span class="comment"># 打印省、市、县三级菜单</span></span><br><span class="line"><span class="comment"># 可返回上一级</span></span><br><span class="line"><span class="comment"># 可随时退出程序</span></span><br><span class="line"></span><br><span class="line">a1=[<span class="string">'嵩县'</span>,<span class="string">'栾川'</span>,<span class="string">'伊川'</span>,<span class="string">'洛龙'</span>]</span><br><span class="line">a2=[<span class="string">'新郑'</span>,<span class="string">'新密'</span>,<span class="string">'二七'</span>,<span class="string">'管城'</span>]</span><br><span class="line">a3=[<span class="string">'兰考'</span>,<span class="string">'杞县'</span>,<span class="string">'尉氏'</span>,<span class="string">'通许'</span>]</span><br><span class="line">a4=[<span class="string">'西华'</span>,<span class="string">'鹿邑'</span>,<span class="string">'扶沟'</span>,<span class="string">'太康'</span>]</span><br><span class="line">a=&#123;<span class="string">'洛阳'</span>:a1,<span class="string">'郑州'</span>:a2,<span class="string">'开封'</span>:a3,<span class="string">'周口'</span>:a4&#125;</span><br><span class="line"></span><br><span class="line">b1=[<span class="string">'B11'</span>,<span class="string">'B12'</span>,<span class="string">'B13'</span>,<span class="string">'B14'</span>]</span><br><span class="line">b2=[<span class="string">'B21'</span>,<span class="string">'B22'</span>,<span class="string">'B23'</span>,<span class="string">'B24'</span>]</span><br><span class="line">b3=[<span class="string">'B31'</span>,<span class="string">'B32'</span>,<span class="string">'B33'</span>,<span class="string">'B34'</span>]</span><br><span class="line">b4=[<span class="string">'B41'</span>,<span class="string">'B42'</span>,<span class="string">'B43'</span>,<span class="string">'B44'</span>]</span><br><span class="line">b=&#123;<span class="string">'B1'</span>:b1,<span class="string">'B2'</span>:b2,<span class="string">'B3'</span>:b3,<span class="string">'B4'</span>:b4&#125;</span><br><span class="line"></span><br><span class="line">c1=[<span class="string">'C11'</span>,<span class="string">'C12'</span>,<span class="string">'C13'</span>,<span class="string">'C14'</span>]</span><br><span class="line">c2=[<span class="string">'C21'</span>,<span class="string">'C22'</span>,<span class="string">'C23'</span>,<span class="string">'C24'</span>]</span><br><span class="line">c3=[<span class="string">'C31'</span>,<span class="string">'C32'</span>,<span class="string">'C33'</span>,<span class="string">'C34'</span>]</span><br><span class="line">c4=[<span class="string">'C41'</span>,<span class="string">'C42'</span>,<span class="string">'C43'</span>,<span class="string">'C44'</span>]</span><br><span class="line">c=&#123;<span class="string">'C1'</span>:c1,<span class="string">'C2'</span>:c2,<span class="string">'C3'</span>:c3,<span class="string">'C4'</span>:c4&#125;</span><br><span class="line"></span><br><span class="line">d1=[<span class="string">'D11'</span>,<span class="string">'D12'</span>,<span class="string">'D13'</span>,<span class="string">'D14'</span>]</span><br><span class="line">d2=[<span class="string">'D21'</span>,<span class="string">'D22'</span>,<span class="string">'D23'</span>,<span class="string">'D24'</span>]</span><br><span class="line">d3=[<span class="string">'D31'</span>,<span class="string">'D32'</span>,<span class="string">'D33'</span>,<span class="string">'D34'</span>]</span><br><span class="line">d4=[<span class="string">'D41'</span>,<span class="string">'D42'</span>,<span class="string">'D43'</span>,<span class="string">'D44'</span>]</span><br><span class="line">d=&#123;<span class="string">'D1'</span>:d1,<span class="string">'D2'</span>:d2,<span class="string">'D3'</span>:d3,<span class="string">'D4'</span>:d4&#125;</span><br><span class="line">china=&#123;<span class="string">'河南'</span>:a,<span class="string">'山西'</span>:b,<span class="string">'陕西'</span>:c,<span class="string">'湖南'</span>:d&#125;</span><br><span class="line"><span class="built_in">print</span>(china)</span><br><span class="line"><span class="keyword">while</span> 1==True:</span><br><span class="line">    s1=str(input(<span class="string">'是否进入程序，进入请按‘1’，退出请按‘q’或‘Q’：'</span>))</span><br><span class="line">    <span class="keyword">if</span> s1==<span class="string">'1'</span>:</span><br><span class="line">        s2=china.keys()</span><br><span class="line">        s3=list(s2)</span><br><span class="line">        a=0</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> s3:</span><br><span class="line">            a+=1</span><br><span class="line">            <span class="built_in">print</span>(a,i)</span><br><span class="line">        <span class="keyword">while</span> 1==True:</span><br><span class="line">            s4=str(input(<span class="string">'请按序号选择省份，如需返回上级请按‘q’或‘Q’，退出请按‘w’或‘W’：'</span>))</span><br><span class="line">            <span class="keyword">if</span> s4.isdigit() and int(s4)&gt;=1 and int(s4)&lt;=len(s3):</span><br><span class="line">                s5=int(s4)</span><br><span class="line">                s6=china[s3[s5-1]].keys()</span><br><span class="line">                b=0</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> list(s6):</span><br><span class="line">                    b+=1</span><br><span class="line">                    <span class="built_in">print</span>(b,j)</span><br><span class="line">                <span class="keyword">while</span> 1==True:</span><br><span class="line">                    s7=str(input(<span class="string">'请按序号选择市份，如需返回上级请按‘q’或‘Q’，退出请按‘w’或‘W’：'</span>))</span><br><span class="line">                    <span class="keyword">if</span> s7.isdigit() and int(s7)&gt;=1 and int(s7)&lt;=len(list(s6)):</span><br><span class="line">                        s8=int(s7)</span><br><span class="line">                        s9=(china[s3[s5-1]][list(s6)[s8-1]])</span><br><span class="line">                        <span class="keyword">for</span> j <span class="keyword">in</span> list(s9):</span><br><span class="line">                            <span class="built_in">print</span>(j)</span><br><span class="line">                        <span class="keyword">while</span> 1==True:</span><br><span class="line">                            ss=str(input(<span class="string">'如需返回上级请按‘q’或‘Q’，退出请按‘w’或‘W’：'</span>))</span><br><span class="line">                            <span class="keyword">if</span> ss.lower()==<span class="string">'q'</span>:</span><br><span class="line">                                b=0</span><br><span class="line">                                <span class="keyword">for</span> j <span class="keyword">in</span> list(china[s3[s5-1]].keys()):</span><br><span class="line">                                    b+=1</span><br><span class="line">                                    <span class="built_in">print</span>(b,j)</span><br><span class="line">                                <span class="built_in">break</span></span><br><span class="line">                            <span class="keyword">elif</span> ss.lower()==<span class="string">'w'</span>:</span><br><span class="line">                                <span class="built_in">exit</span>(<span class="string">'已退出'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                            <span class="keyword">else</span>:</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">'输入错误，请重新输入'</span>)</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">elif</span> s7.lower()==<span class="string">'q'</span>:</span><br><span class="line">                        b=0</span><br><span class="line">                        <span class="keyword">for</span> j <span class="keyword">in</span> list(china.keys()):</span><br><span class="line">                            b+=1</span><br><span class="line">                            <span class="built_in">print</span>(b,j)</span><br><span class="line">                        <span class="built_in">break</span></span><br><span class="line">                    <span class="keyword">elif</span> s7.lower()==<span class="string">'w'</span>:</span><br><span class="line">                        <span class="built_in">exit</span>(<span class="string">'已退出'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="built_in">print</span>(<span class="string">'输入错误，请重新输入'</span>)                      </span><br><span class="line"></span><br><span class="line">                </span><br><span class="line">            <span class="keyword">elif</span> s4.lower()==<span class="string">'q'</span>:</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">elif</span> s4.lower()==<span class="string">'w'</span>:</span><br><span class="line">                <span class="built_in">exit</span>(<span class="string">'已退出'</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'输入错误，请重新输入'</span>)</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> s1.lower()==<span class="string">'q'</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'已退出'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入错误，请重新输入'</span>)</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/21/三级菜单/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-moniHr" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
